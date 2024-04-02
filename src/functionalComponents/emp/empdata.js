@@ -1,0 +1,33 @@
+export let empdata=[
+    {
+    "name":"baragava",
+    "designation":"reactDeveloper",
+    "salary":25000
+},
+{
+    "name":"durgaprasad",
+    "designation":"reactDeveloper",
+    "salary":35000
+},
+{
+    "name":"madhukumar",
+    "designation":"angularDeveloper",
+    "salary":55000
+},
+{
+    "name":"chintu",
+    "designation":"pythonDeveloper",
+    "salary":29000
+},
+{
+    "name":"bunty",
+    "designation":"javaDeveloper",
+    "salary":19000
+},
+{
+    "name":"shiva",
+    "designation":"angularDeveloper",
+    "salary":20000
+}
+
+];
