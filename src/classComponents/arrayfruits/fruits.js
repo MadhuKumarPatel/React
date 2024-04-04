@@ -21,24 +21,49 @@ class ArrayOfFruits extends Component{
             }
         )
     }
-    deleteFruits=()=>{
-        let newArray2=this.state.arr.slice();
-        newArray2.pop()
+    deleteFruits=(i)=>{
+       let newArray=this.state.arr.filter((eachitem,index)=>{
+        return index!=i
+       })
         this.setState(
             {
-               arr:newArray2,
+               arr:newArray,
                input:""
+            }
+        )
+    }
+    updateFruit=(i)=>{
+        let newArray=this.state.arr.map((eachitem,index)=>{
+            if(index==i){
+                return this.state.input
+            }
+            else{
+                return eachitem
+            }
+        })
+        this.setState(
+            {
+                arr:newArray,
+                input:""
             }
         )
     }
    render(){
     return(
         <>
-        <h2>{this.state.arr.join(" , ")}</h2>
         <input type="text" value={this.state.input} onChange={this.addValue}></input>
         <button onClick={this.addFruits}>Add Fruits</button>
-        <button onClick={this.deleteFruits}>Remove</button>
-        
+        <ul>
+         {
+         this.state.arr.map((eachitem,i)=>{
+            return (<>
+            <li>{eachitem} <button onClick={()=>this.deleteFruits(i)}>Remove</button>  <button onClick={()=>this.updateFruit(i)}>Update</button></li>
+            
+            </>
+            )
+         })
+         } 
+          </ul>
         </>
     )
    }
