@@ -1,12 +1,10 @@
 import './App.css';
-import Empfilter from './functionalComponents/emp/empfilter';
-import Emptable from './functionalComponents/emp/emptable';
+import ArrayOfFruits from './classComponents/arrayfruits/fruits';
 
 function App() {
   return (
    <>
-    <Emptable/>
-   <Empfilter/>
+   <ArrayOfFruits/>
    </>
   );
 }
