@@ -1,10 +1,10 @@
 import './App.css';
-import ArrayOfFruits from './classComponents/arrayfruits/fruits';
+import Productlisting from './classComponents/axios/products';
 
 function App() {
   return (
    <>
-   <ArrayOfFruits/>
+   <Productlisting/>
    </>
   );
 }
