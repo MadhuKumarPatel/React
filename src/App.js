@@ -1,10 +1,10 @@
 import './App.css';
-import Productlisting from './classComponents/axios/products';
+import DummyProducts from './classComponents/axios/dummyjson';
 
 function App() {
   return (
    <>
-   <Productlisting/>
+   <DummyProducts/>
    </>
   );
 }

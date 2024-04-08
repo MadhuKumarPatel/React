@@ -14,6 +14,7 @@ class Productlisting extends Component{
   fetchData=async() =>{
     let result=await axios("https://dummyjson.com/recipes")
     console.log(result.data.recipes);
+    
     this.setState({
         recipes:result.data.recipes
     })
