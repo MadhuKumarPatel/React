@@ -1,0 +1,16 @@
+.main{
+    width: 30%;
+    text-align: center;
+    margin-inline: auto;
+    margin-top: 3%;
+}
+.main button{
+    margin-left: 10px;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 3px;
+}
+.main button:hover{
+    color: white;
+    background-color: black;
+}
