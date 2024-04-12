@@ -1,10 +1,10 @@
 import './App.css';
-import DummyProducts from './classComponents/axios/dummyjson';
+import HookstateEx1 from './functionalComponents/hooks/usestate/hookstate1';
 
 function App() {
   return (
    <>
-   <DummyProducts/>
+   <HookstateEx1/>
    </>
   );
 }
