@@ -1,0 +1,58 @@
+h1{
+    text-align: center;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.button span{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background-color:rgba(128, 128, 128, 0.438);
+    margin-left: 10px;
+}
+.button span:hover{
+    background-color:darkslategray;
+    color: whitesmoke;
+}
+.button span p{
+  margin-top: 4px;
+}
+.card{
+    width: 50%;
+    display: flex;
+    gap: 30px;
+    background-color:antiquewhite;
+    margin: auto;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.cardimg{
+    width: 50%;
+    height: 300px;
+   
+}
+.cardimg img{
+    width:100% ;
+    height:100%;
+    border-radius: 10px;
+}
+.details{
+    width: 50%;
+}
+.details button{
+    padding: 6px 8px;
+    border: 0;
+    border-radius: 3px;
+    background-color:black;
+    color:whitesmoke;
+    font-size: 18px;
+    cursor: pointer;
+}
+

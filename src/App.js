@@ -1,10 +1,10 @@
 import './App.css';
-import HookstateEx1 from './functionalComponents/hooks/usestate/hookstate1';
+import UseEffectEx1 from './functionalComponents/hooks/useEffect/productsUseEffect';
 
 function App() {
   return (
    <>
-   <HookstateEx1/>
+   <UseEffectEx1/>
    </>
   );
 }

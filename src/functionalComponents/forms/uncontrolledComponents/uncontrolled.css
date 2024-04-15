@@ -1,0 +1,50 @@
+table,tr,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    /* width: 40%; */
+    text-align: center;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    padding: 30px;
+    background-color:aquamarine;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+.main input{
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  border: 0;
+  margin-top: 10px;
+}
+.main input::placeholder{
+    text-align: center;
+}
+.main button{
+    margin-top: 15px;
+    padding: 5px 8px;
+    border: 0;
+    border-radius: 4px;
+}
+.main button:hover{
+    background-color: black;
+    color:white;
+}
+.main p{
+    color: red  ;
+}
+.table{
+    margin-top: 30px;
+}
+table{
+    width: 360px;
+}
+.delete{
+    cursor: pointer;
+    font-weight: bolder;
+}
