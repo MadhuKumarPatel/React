@@ -1,10 +1,10 @@
 import './App.css';
-import UseEffectEx1 from './functionalComponents/hooks/useEffect/productsUseEffect';
+import UncontrolledEx1 from './functionalComponents/forms/uncontrolledComponents/uncontrolled';
 
 function App() {
   return (
    <>
-   <UseEffectEx1/>
+   <UncontrolledEx1/>
    </>
   );
 }
