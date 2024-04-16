@@ -9,18 +9,32 @@ const UseEffectEx1=()=>{
     },[])
 
     const [data,setData]=useState([])
-    const [product,setproduct]=useState([])
+    const [product,setproduct]=useState({})
+    const [count,setCount]=useState(1)
+
+    useEffect(()=>{
+        // productDetails()
+           ( async()=>{
+                const result=await axios.get(`https://dummyjson.com/products/${count}`)
+                setproduct(result.data)
+                console.log(result.data);
+            })();
+    },[count])
+
+    const countIncre=(i)=>{
+        setCount(i)
+    }
 
     const fetchDetails=async()=>{
         const response=await axios.get("https://dummyjson.com/products")
         // console.log(response.data.products);
         setData(response.data.products)
     }
-    const productDetails=async(i)=>{
-        const result=await axios.get(`https://dummyjson.com/products/${i}`)
-        setproduct(result.data)
-        console.log(result.data);
-    }
+    // const productDetails=async()=>{
+    //     const result=await axios.get(`https://dummyjson.com/products/${count}`)
+    //     setproduct(result.data)
+    //     console.log(result.data);
+    // }
     return(
         <>
        <h1>Products</h1>
@@ -29,12 +43,12 @@ const UseEffectEx1=()=>{
           data.map((eachitem,index)=>{
              const i=index+1
              return(
-                    <span key={eachitem.id} onClick={()=>productDetails(i)}><p>{i}</p></span>
+                    <span key={eachitem.id} onClick={()=>countIncre(i)}><p>{i}</p></span>
              )
           })
         }
         </div>
-        { Object.keys(product).length>0 && (
+        {/* { Object.keys(product).length>0 && ( */}
              <div className="card">
              <div className="cardimg">
                 <img src={product.thumbnail} alt="" />
@@ -47,7 +61,7 @@ const UseEffectEx1=()=>{
                 <button>Buy Now</button>
             </div>
          </div>
-        )}
+        {/* )}  */}
         </>
     )
      
