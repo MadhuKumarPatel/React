@@ -102,7 +102,7 @@ class DummyProducts extends Component{
                     }
                     </h2>
                 </div>
-            <div className="container">
+            <div className="containerr">
                 {
                   this.state.products.map((eachitem,i)=>{
                     let{title,count,thumbnail,price}=eachitem
