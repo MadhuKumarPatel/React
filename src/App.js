@@ -1,10 +1,10 @@
 import './App.css';
-import UseEffectEx1 from './functionalComponents/hooks/useEffect/productsUseEffect';
+import NavigationStack from './navigationstack/navigationStack';
 
 function App() {
   return (
    <>
-   <UseEffectEx1/>
+   < NavigationStack/>
    </>
   );
 }

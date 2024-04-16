@@ -14,7 +14,7 @@ const UseEffectEx1=()=>{
 
     useEffect(()=>{
         // productDetails()
-           ( async()=>{
+           (async()=>{
                 const result=await axios.get(`https://dummyjson.com/products/${count}`)
                 setproduct(result.data)
                 console.log(result.data);
@@ -48,7 +48,7 @@ const UseEffectEx1=()=>{
           })
         }
         </div>
-        {/* { Object.keys(product).length>0 && ( */}
+        { Object.keys(product).length>0 && (
              <div className="card">
              <div className="cardimg">
                 <img src={product.thumbnail} alt="" />
@@ -61,7 +61,7 @@ const UseEffectEx1=()=>{
                 <button>Buy Now</button>
             </div>
          </div>
-        {/* )}  */}
+     )}
         </>
     )
      
