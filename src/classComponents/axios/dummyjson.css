@@ -9,7 +9,6 @@
       justify-content: center;
       gap: 20px;
       padding:20px 0px;
-      border: 1px solid;
   }
   .productcard{
     width: 25%;
@@ -47,6 +46,7 @@
     font-size: 24px;
     padding: 0px 8px 2px 8px;
     cursor: pointer;
+    border-radius: 50%;
   }
   .productcard h4:hover{
     background-color:rgba(128, 128, 128, 0.37);
@@ -66,13 +66,24 @@
     background-color: rgba(128, 128, 128, 0.37);
     padding: 0px 8px 2px 8px;
     cursor: pointer;
+    border-radius: 4px;
   }
   .price{
-    position: fixed;
-    z-index: 9;
+   text-align: center;
+   margin-top: 10px;
+  }
+  .sorting{
     text-align: center;
-    font-size: 14px;
-    margin-top: 10px;
-    margin-left: 4px;
+    margin-top: 20px;
+  }
+  .sorting button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: .5s;
+  }
+  .sorting button:hover{
+    background-color: black;
+    color: whitesmoke;
   }
   

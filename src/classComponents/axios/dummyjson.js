@@ -4,7 +4,8 @@ import "./dummyjson.css"
 
 class DummyProducts extends Component{
     state={
-        products:[]
+        products:[],
+        filterArray:[]
     }
     componentDidMount(){
         this.fetchData()
@@ -20,11 +21,12 @@ class DummyProducts extends Component{
          
             this.setState({
                 products:data,
+                filterArray:data
             })
         console.log(data);
     }
     deleteRecipe=(i)=>{
-        let newProducts=this.state.products.filter((eachitem,index)=>{
+        let newProducts=this.state.filterArray.filter((eachitem,index)=>{
             return index!=i
         })
         this.setState({
@@ -61,9 +63,35 @@ class DummyProducts extends Component{
             products:newProducts
         })
     }
+    lowToHigh=()=>{
+        let newArray=this.state.filterArray.sort((a,b)=>a.price-b.price)
+        this.setState({
+            products:newArray
+        })
+    }
+    highToLow=()=>{
+        let newArray=this.state.filterArray.sort((a,b)=>b.price-a.price)
+        this.setState({
+            products:newArray
+        })
+    }
+    priceRange=()=>{
+        let newArray=this.state.filterArray.filter((eachitem)=>{
+             return eachitem.price<=500;
+        })
+        this.setState({
+            products:newArray
+        })
+    }
     render(){
         return(
             <>
+                <div className="sorting">
+                    <button onClick={this.lowToHigh}>Low to High</button>
+                    <button onClick={this.highToLow}>High to Low</button>
+                    <button onClick={this.priceRange}>0-500</button>
+                </div>
+
                 <div className="price">
                     <h1>Total Price</h1>
                     <h2>&#8377;{" "}
