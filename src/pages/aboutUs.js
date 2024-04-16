@@ -1,11 +1,12 @@
 import Header from "../functionalComponents/components/header";
 
-const ContactScreen=()=>{
+
+const AboutScreen=()=>{
     return(
         <>
         <Header/>
-        <h2>contact screen</h2>
+        <h2>AboutScreen</h2>
         </>
     )
 }
-export default ContactScreen;
+export default AboutScreen;

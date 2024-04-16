@@ -1,0 +1,9 @@
+.links{
+    font-size: 30px;
+    text-decoration: none;
+    margin-left: 30px;
+    color: rgba(255, 255, 255, 0.781);
+}
+.links:hover{
+    color: white;
+}
