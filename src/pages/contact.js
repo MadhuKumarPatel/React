@@ -1,11 +1,12 @@
 import Header from "../functionalComponents/components/header";
+import UncontrolledEx1 from "../functionalComponents/forms/uncontrolledComponents/uncontrolled";
 
 const ContactScreen=()=>{
     return(
         <>
         <Header/>
-        <h2>contact screen</h2>
-        </>
+        <UncontrolledEx1/>
+            </>
     )
 }
 export default ContactScreen;

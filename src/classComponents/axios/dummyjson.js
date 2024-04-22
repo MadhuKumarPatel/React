@@ -112,9 +112,9 @@ class DummyProducts extends Component{
                         <img src={thumbnail} alt={title}/>
                         <h2>{title}</h2>
                         <div className="count">
-                        <h5 onClick={()=>this.increCount(i)}> &#43;</h5>
-                        <span>  {count} </span> 
                         <h5 onClick={()=>this.decreCount(i)}> &#8722;</h5>
+                        <span>  {count} </span> 
+                        <h5 onClick={()=>this.increCount(i)}> &#43;</h5>
                         </div> 
                         <p><span>Price : </span>&#8377; {price}</p>
                    </div> 
