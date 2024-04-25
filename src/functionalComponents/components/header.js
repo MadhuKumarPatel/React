@@ -7,7 +7,7 @@ import "./header.css"
 function Header() {
   return (
     <>
-      <Navbar bg="primary" data-bs-theme="dark">
+      <Navbar bg="primary" data-bs-theme="dark" className='headers'>
         <Container>
           {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand> */}
           <Nav className="me-auto " >
@@ -17,6 +17,7 @@ function Header() {
             <Link className='links' to={"/"}>Home</Link>
             <Link className='links' to={"/contact"}>Contact Us</Link>
             <Link className='links' to={"/aboutUs"}>About Us</Link>
+            <Link className='links' to={"/cart"}>Cart</Link>
           </Nav>
         </Container>
       </Navbar>

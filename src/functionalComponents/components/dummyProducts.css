@@ -1,0 +1,94 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .containerr{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding:20px 0px;
+  }
+  .productcard{
+    width: 25%;
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px 0px;
+    background-color: white;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    transition: .3s;
+  }
+  .product:hover{
+    transform: scale(1.02);
+  }
+  .productcard img{
+      width: 250px;
+      height: 200px;
+      margin-top: 20px;
+      border-radius: 5px;
+  }
+  .productcard h2{
+    margin-top: 10px;
+    font-size: 22px;
+  }
+  .productcard p{
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .productcard p:last-child span{
+    font-size: 20px;
+  }
+  .productcard h4{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 24px;
+    padding: 0px 8px 2px 8px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .productcard h4:hover{
+    background-color:rgba(128, 128, 128, 0.37);
+  }
+  .productcard .count{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .productcard .count h5{
+    font-size: 24px;
+    background-color: rgba(128, 128, 128, 0.37);
+    padding: 0px 8px 2px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .price{
+   text-align: center;
+  }
+  .sorting{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .sorting button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: .5s;
+  }
+  .sorting button:hover{
+    background-color: black;
+    color: whitesmoke;
+  }
+  .productcard button{
+    padding: 6px 10px;
+    border-radius: 3px;
+    transition: .3s;
+  }
+  .productcard button:hover{
+    background-color: black;
+    color: white;
+  }

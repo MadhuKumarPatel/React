@@ -1,4 +1,3 @@
-import './App.css';
 import NavigationStack from './navigationstack/navigationStack';
 
 function App() {

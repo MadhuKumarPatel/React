@@ -1,11 +1,11 @@
-import DummyProducts from '../classComponents/axios/dummyjson';
+import ProductsProducts from '../functionalComponents/components/dummyProducts';
 import Header from '../functionalComponents/components/header';
 
 function HomeScreen() {
   return (
     <>
     <Header/>
-    <DummyProducts/>
+    <ProductsProducts/>
     </>
   );
 }
